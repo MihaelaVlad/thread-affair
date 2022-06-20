@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 export default function Home() {
   return (
@@ -7,15 +9,11 @@ export default function Home() {
         <title>Thread Affair</title>
       </Head>
 
-      <header className="header">
-        Hello world!
-        <img src="/images/logo.jpg" alt=""></img>
-        <i className="fa-solid fa-phone"></i>
-      </header>
+      <Header></Header>
 
       <main className="content"></main>
 
-      <footer className="footer"></footer>
+      <Footer></Footer>
     </div>
   );
 }
