@@ -1,7 +1,7 @@
 export default function HeaderPrimary() {
   return (
     <section className="header-primary d-none d-lg-block">
-      <nav className="nav-primary mb-4">
+      <nav className="nav-primary mb-3">
         <ul>
           <li>
             <a href="https://pixellab.ro" title="Home">

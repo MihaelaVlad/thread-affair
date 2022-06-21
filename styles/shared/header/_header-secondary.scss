@@ -57,15 +57,24 @@
       align-items: center;
       gap: 15px;
 
+      @include media-breakpoint-up(lg) {
+        flex-direction: row-reverse;
+        gap: 35px;
+      }
+
       li:nth-child(2) {
         a {
           display: flex;
           align-items: center;
           gap: 5px;
           color: $brand-primary;
+        }
 
-          img {
-            height: 30px;
+        img {
+          height: 30px;
+
+          @include media-breakpoint-up(lg) {
+            height: 40px;
           }
         }
       }
