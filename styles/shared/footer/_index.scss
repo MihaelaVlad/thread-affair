@@ -1,0 +1,15 @@
+@import 'footer-primary';
+@import 'footer-secondary';
+
+// one-off styles
+.footer {
+  margin-top: 24px;
+
+  a {
+    transition: color 0.1s ease-in-out;
+
+    &:hover {
+      color: $brand-primary;
+    }
+  }
+}

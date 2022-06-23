@@ -59,7 +59,6 @@
 
       @include media-breakpoint-up(lg) {
         flex-direction: row-reverse;
-        gap: 35px;
       }
 
       li:nth-child(2) {

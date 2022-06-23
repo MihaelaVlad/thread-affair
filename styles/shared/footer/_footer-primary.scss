@@ -1,0 +1,120 @@
+.footer-primary {
+  background-color: $brand-secondary;
+
+  @media (min-width: 1780px) {
+    background: $brand-secondary url('/images/banners/banner-06.jpg') no-repeat
+      right center;
+  }
+
+  &-inner {
+    display: grid;
+    row-gap: 43px;
+    grid-template-areas:
+      'nav'
+      'contact'
+      'support';
+
+    @include media-breakpoint-up('lg') {
+      grid-template-colums: 1fr 2fr;
+      grid-template-areas:
+        'nav nav'
+        'support contact';
+    }
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 43px;
+    grid-area: nav;
+
+    @include media-breakpoint-up('lg') {
+      flex-wrap: nowrap;
+      column-gap: 110px;
+    }
+
+    ul {
+      flex-basis: 50%;
+
+      @include media-breakpoint-up('lg') {
+        flex-basis: auto;
+      }
+    }
+
+    li {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+
+  .footer-contact {
+    grid-area: contact;
+
+    h1 {
+      font-size: 16px;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+
+      span {
+        font-weight: 500;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-weight: 300;
+      line-height: 20px;
+
+      a {
+        display: block;
+      }
+
+      a:nth-last-of-type(1) {
+        color: $brand-primary;
+        transition: text-decoration 0.1s ease-in-out;
+
+        &:hover {
+          text-decoration: 1px double underline;
+        }
+      }
+    }
+
+    @include media-breakpoint-up('lg') {
+      align-self: end;
+    }
+  }
+
+  .footer-support {
+    grid-area: support;
+    justify-self: center;
+
+    ul {
+      display: flex;
+      gap: 33px;
+
+      li {
+        text-transform: uppercase;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      i[class*='fa-'] {
+        font-size: 40px;
+        color: $brand-primary;
+      }
+    }
+
+    @include media-breakpoint-up('lg') {
+      justify-self: start;
+      align-self: end;
+    }
+  }
+}
