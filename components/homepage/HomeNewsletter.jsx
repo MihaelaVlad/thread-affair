@@ -10,7 +10,7 @@ export default function HomeNewsletter() {
           type="email"
           name="home-newsletter"
           id="home-newsletter"
-          placeholder="enter your email to receive"
+          placeholder="Enter your email address"
           required
         ></input>
 

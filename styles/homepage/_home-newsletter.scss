@@ -4,6 +4,14 @@
   color: $white;
   font-size: 19px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44vh;
+
+  @include media-breakpoint-up('lg') {
+    height: 22vh;
+  }
 
   form {
     display: flex;
@@ -35,6 +43,10 @@
     font-weight: 100;
     border-bottom: 1px solid $white;
     color: $white;
+
+    &:focus {
+      outline: none;
+    }
 
     @include media-breakpoint-up('lg') {
       width: 32.60188%;

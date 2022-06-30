@@ -2,20 +2,22 @@ export default function ContentBanner() {
   return (
     <div className="content-banner">
       <div className="content-banner-inner container">
-        <div className="text-center">
-          <h1>Custom Suits</h1>
+        <div className="content-banner-cta">
+          <div className="text-center">
+            <h1>Custom Suits</h1>
 
-          <h2>Get back to work in style</h2>
-        </div>
+            <h2>Get back to work in style</h2>
+          </div>
 
-        <div>
-          <a
-            href="https://pixellab.com"
-            title="Create your suit"
-            className="button-border button-border-large text-uppercase"
-          >
-            Create your suit
-          </a>
+          <div>
+            <a
+              href="https://pixellab.ro"
+              title="Create your suit"
+              className="button-border button-border-large text-uppercase"
+            >
+              Create your suit
+            </a>
+          </div>
         </div>
 
         <footer className="content-banner-copy">

@@ -4,6 +4,29 @@
   &-header {
     position: relative;
 
+    .product-tile-title {
+      font-size: 24px;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+
+      span:first-child {
+        color: $brand-secondary;
+        font-weight: 500;
+      }
+
+      span:last-child {
+        font-weight: 500;
+      }
+    }
+
+    .product-tile-subtitle {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
     .badge {
       top: 20px;
       right: 20px;
@@ -17,6 +40,28 @@
     img {
       width: 100%;
       display: block;
+    }
+  }
+
+  &-pricing {
+    .catalog-price {
+      text-decoration: line-through;
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: 300;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      span {
+        font-weight: 500;
+        color: $brand-primary;
+      }
     }
   }
 }

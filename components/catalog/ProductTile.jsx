@@ -1,7 +1,7 @@
 export default function ProductTile() {
   return (
     <article className="product-tile">
-      <header className="product-tile-header">
+      <header className="product-tile-header mb-3">
         <a
           href="https://pixellab.ro"
           className="product-tile-image"
@@ -31,7 +31,7 @@ export default function ProductTile() {
 
         <span className="price">
           USD
-          <span>299</span>
+          <span>299.00</span>
         </span>
       </section>
 

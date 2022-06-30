@@ -4,7 +4,7 @@
   &.grid-layout {
     .product-tiles {
       display: grid;
-      row-gap: 24px;
+      row-gap: 48px;
 
       @include media-breakpoint-up('lg') {
         grid-template-columns: repeat(3, 1fr);
@@ -17,7 +17,7 @@
     .product-tiles {
       display: flex;
       flex-direction: column;
-      row-gap: 24px;
+      row-gap: 48px;
 
       @include media-breakpoint-up('lg') {
         flex-direction: row;

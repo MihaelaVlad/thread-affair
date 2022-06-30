@@ -42,6 +42,13 @@
     }
   }
 
+  &-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    align-items: center;
+  }
+
   &-copy {
     position: absolute;
     text-align: center;
