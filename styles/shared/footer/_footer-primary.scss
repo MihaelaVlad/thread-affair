@@ -15,7 +15,7 @@
       'support';
 
     @include media-breakpoint-up('lg') {
-      grid-template-colums: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
       grid-template-areas:
         'nav nav'
         'support contact';

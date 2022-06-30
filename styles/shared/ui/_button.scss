@@ -6,13 +6,37 @@
   padding: 15px 35px;
   line-height: 19px;
   border-radius: 30px;
-  border: 1px solid $brand-primary;
+  border: 2px solid $brand-primary;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   display: inline-block;
 
   &:hover {
     color: $brand-primary;
     background-color: transparent;
+  }
+
+  &-large {
+    padding: 30px 70px;
+    border-radius: 60px;
+    font-size: 20px;
+  }
+}
+
+.button-border {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: $brand-primary;
+  text-decoration: none;
+  padding: 15px 35px;
+  line-height: 19px;
+  border-radius: 30px;
+  border: 2px solid $brand-primary;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  display: inline-block;
+
+  &:hover {
+    color: $white;
+    background-color: $brand-primary;
   }
 
   &-large {
